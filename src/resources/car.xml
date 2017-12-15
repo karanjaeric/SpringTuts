@@ -1,0 +1,45 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans> 
+    <bean id="car" class="springtuts.Car">
+        <property name="carName" value="Vitz"/>
+        <property name="engine" ref="engine"/>
+        <property name="carNames">
+            <list>
+                <value>Vits</value>
+                <value>Toyota</value>
+                <value>Marcedes Benz</value>
+                <value>Rav 4</value>
+            </list>
+        </property>
+        
+        <property name="cricketers">
+            <set>
+                <value>cricketer1</value>
+                <value>cricketer2</value>
+                <value>cricketer3</value>
+                <value>cricketer4</value>
+                
+            </set>
+        </property>
+        
+        <property name="countryCapitals">
+            <map>
+                <entry key="India" value="Delhi" />
+                <entry key="Kenya" value="Nairobi" />
+                <entry key="Uganda" value="Kampala" />
+            </map>
+        </property>
+        
+        <property name="fruits">
+            <list>
+                <value>Apple</value>
+                <value>Mangoes</value>
+                <value>Grapes</value>
+                <value>Lemons</value>
+
+            </list>
+        </property>
+      
+    </bean>
+</beans>
